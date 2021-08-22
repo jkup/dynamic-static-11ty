@@ -5,4 +5,4 @@ zone_id = ''
 usage_model = ''
 compatibility_flags = []
 workers_dev = true
-site = {bucket = "",entry-point = "workers-site"}
+site = {bucket = "_site",entry-point = "workers-site"}
