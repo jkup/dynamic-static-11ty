@@ -30,3 +30,5 @@ wrangler init --site your-repo-name
 ```sh
 wrangler publish
 ```
+
+Note: You'll have to run `npx eleventy` before `wrangler publish` because wrangler will just grab whatever is currently in `_site/`.
