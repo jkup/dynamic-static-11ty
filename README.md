@@ -6,6 +6,40 @@ An static, [Eleventy](https://www.11ty.dev/) blog, with dynamic markup generated
 
 See it in action [here](https://dynamic-static-11ty.jkup.workers.dev/)
 
+## Run this yourself
+
+1. Clone the repo
+
+```sh
+git clone git@github.com:jkup/dynamic-static-11ty.git
+```
+
+2. npm install
+
+```sh
+npm install
+```
+
+3. npx eleventy to generate the static site
+
+```sh
+npx @11ty/eleventy
+```
+
+4. Set your Worker name in `wrangler.toml`. It's currently "dynamic-static-11ty" but you can make it anything you want.
+5. Sign up for a Workers account and install the CLI. Instructions can be found [here](https://developers.cloudflare.com/workers/get-started/guide)
+6. Wrangler login
+
+```sh
+wrangler login
+```
+
+7. Publish your Worker!
+
+```sh
+wrangler publish
+```
+
 ## How to do this yourself
 
 1. Create an empty GitHub repo
