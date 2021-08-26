@@ -6,6 +6,12 @@ An static, [Eleventy](https://www.11ty.dev/) blog, with dynamic markup generated
 
 See it in action [here](https://dynamic-static-11ty.jkup.workers.dev/)
 
+## How it works
+
+This is an [Eleventy](https://www.11ty.dev/) website that is built and served by Cloudflare [Workers sites](https://developers.cloudflare.com/workers/platform/sites). Cloudflare's [wrangler cli](https://github.com/cloudflare/wrangler) takes each page in the `_site` directory and stores it in [Workers KV](https://developers.cloudflare.com/workers/learning/how-kv-works).
+
+When a user requests the site, the Worker takes the HTML page from KV and before serving it runs it through [HTMLRewriter](https://developers.cloudflare.com/workers/runtime-apis/html-rewriter). This means that Workers can get dynamic data at runtime and edit the HTML before serving it to the client.
+
 ## Run this yourself
 
 1. Clone the repo
